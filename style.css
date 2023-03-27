@@ -12,7 +12,6 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
 }
 
 .cardcontainer {
@@ -85,7 +84,7 @@ body {
     opacity: 0.9;
 }
 
-.feedback-paragrah {
+.feedback-paragraph {
     font-size: 19px;
     opacity: 0.7;
     letter-spacing: 1px;
@@ -220,4 +219,99 @@ img {
     border: transparent;
     border-radius: 45px;
     cursor: pointer;
+}
+
+@media screen and (min-width: 500px) {
+    .wrapper {
+        height: 100vh;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    
+    .cardcontainer {
+        display: block;
+        box-shadow: none;
+    }
+
+    .resultcard {
+        height: 60%;
+        width: 100%;
+        border-top-left-radius: 0px;
+        border-top-right-radius: 0px;
+        gap: 20px;
+    }
+
+    .resultcard-header {
+        font-size: 20px;
+    }
+
+    .circle {
+        padding: 30px;
+    }
+
+    .circle-header {
+        font-size: 60px;
+    }
+
+    .feedback-header {
+        font-size: 25px;
+    }
+
+    .feedback-paragraph {
+        font-size: 15px;
+        letter-spacing: 0px;
+    }
+
+    .summarycard {
+        height: 73%;
+        width: 100%;
+        gap: 23px;
+    }
+
+    .summary-header {
+        font-size: 22px;
+    }
+
+    .reaction-container {
+        padding: 0px;
+    }
+
+    .reaction-left {
+        font-size: 16px;
+    }
+
+    .memory-container {
+        padding: 0px;
+    }
+
+    .memory-left {
+        font-size: 16px;
+    }
+
+    .verbal-container {
+        padding: 0px;
+    }
+
+    .verbal-left {
+        font-size: 16px;
+    }
+
+    .visual-container {
+        padding: 0px;
+    }
+
+    .visual-left {
+        font-size: 16px;
+    }
+
+    .result-container {
+        font-size: 16px;
+    }
+
+    #continue-button {
+        padding: 20px 0px;
+        font-size: 15px;
+        font-weight: 600;
+    }
 }
